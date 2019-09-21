@@ -1,0 +1,49 @@
+GET {{ELASCTIC_HOST}}/_cat/health?v&pretty
+
+###
+
+GET {{ELASCTIC_HOST}}/_cat/indices?v&pretty
+
+###
+
+GET {{ELASCTIC_HOST}}/_search/{{query}}
+
+###
+
+DELETE {{ELASCTIC_HOST}}/_all?pretty
+
+###
+
+
+GET {{ELASCTIC_HOST}}/game_of_thrones/users/
+
+###
+
+DELETE {{ELASCTIC_HOST}}/app/users/4?pretty
+
+###
+
+DELETE {{ELASCTIC_HOST}}/game_of_thrones
+
+###
+
+POST localhost:9200/big_data_set/_search?pretty
+Content-Type: application/json
+
+
+{
+  "query": {
+    "match": {
+      "Ville": "nancy luneville"
+    }
+   }
+//  "sort": [
+//    { "_score": "desc" }
+//  ],
+//  "from": 0,
+//  "size": 1000
+}
+
+
+###
+
